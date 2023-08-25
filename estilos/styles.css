@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+:root {
+    --cor-fonte-principal: #101828; 
+    --cor-fonte-secundaria: #667085;
+    --cor-fonte-destaque: #8E2424;
+
+    --cor-background-destaque: #8e24241f;
+
+    --fonte-principal: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 32px;
+    text-shadow: -3px 3px 3px rgba(0, 0, 0, 0.182);
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-fonte-secundaria);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.header__navbar__empresa {
+    display: flex;
+    gap: 32px;
+}
+
+.header__login {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.header__login__destaque {
+    background-color: #8E2424;
+    padding: 10px 18px;
+    border-radius: 8px;
+    color: white;
+    box-shadow: -3px 3px 3px rgba(0, 0, 0, 0.182);
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    text-align: center;
+    padding: 96px 0px;
+}
+
+.cabecalho__subtitulo {
+    color: var(--cor-fonte-destaque);
+    font-size: 16px;
+}
+
+.cabecalho__titulo {
+    color: var(--cor-fonte-principal);
+    font-size: 48px;
+}
+
+.cabecalho__paragrafo {
+    color: var(--cor-fonte-secundaria);
+    font-size: 20px;
+    max-width: 790px;
+}
+
+.cabecalho__estatisticas {
+    display: flex;
+    padding: 96px 0px;
+    gap: 32px;
+    text-align: left;
+}
+
+.cabecalho__estatisticas__atributos {
+    max-width: 280px;
+    margin: auto;
+}
+
+.cabecalho__estatisticas__atributos__titulo {
+    color: var(--cor-fonte-destaque);
+    font-size: 60px;
+    padding-bottom: 12px;
+}
+
+.cabecalho__estatisticas__atributos__subtitulo {
+    color: var(--cor-fonte-principal);
+    font-size: 18px;
+    padding-bottom: 8px;
+}
+
+.cabecalho__estatisticas__atributos__paragrafo {
+    color: var(--cor-fonte-secundaria);
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    text-align: center;
+}
+
+.principal__destaque {
+    color: var(--cor-fonte-destaque);
+    padding: 0 20px;
+}
+
+.spam {
+    background-color: rgba(142, 36, 36, 0.100);
+    padding: 4px 12px;
+    border-radius: 16px;
+}
+
+.principal__titulo {
+    color: var(--cor-fonte-principal);
+    font-size: 36px;
+}
+
+.principal__paragrafo {
+    color: var(--cor-fonte-secundaria);
+    font-size: 20px;
+}
+
+.principal__imagem {
+    width: 70%;
+    padding: 32px 0px;
+}
+
+.vagas {
+    padding: 32px;
+    width: 50%;
+    justify-content: left;
+    margin: auto;
+}
+
+.vagas__categoria {
+    color: var(--cor-fonte-principal);
+    margin-top: 32px;
+}
+
+.vagas__info {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    border: 1px solid #EAECF0;
+    padding: 24px;
+    border-radius: 16px;
+    margin: 32px 0px;
+}
+
+.vagas__nome__vaga {
+    color: var(--cor-fonte-principal);
+    font-size: 18px;
+}
+
+.vagas__detalhes {
+    color: var(--cor-fonte-secundaria);
+    display: flex;
+    gap: 32px;
+}
+
+.review {  
+    text-align: center;
+    padding: 64px;
+    background-color: rgba(142, 36, 36, 0.100);
+    border-radius: 16px;
+    width: 70%;
+    margin: auto;
+}
+
+.review__destaque {
+    color: var(--cor-fonte-destaque);
+    font-weight: 600;
+    padding: 15px;
+}   
+
+.review__titulo {
+    color: var(--cor-fonte-principal);
+    font-weight: 500;
+    margin-bottom: 32px;
+    font-size: 36px;
+}
+
+.review__nome {
+    margin: 16px 0;
+    color: var(--cor-fonte-principal);
+    font-weight: 500;
+}
+
+.review__trabalho {
+    color: var(--cor-fonte-secundaria);
+    font-size: 14px;
+}
+
+.rodape {
+    margin-top: 96px;
+    padding: 96px 0;
+    background-color: #F9FAFB;
+    text-align: center;
+}
+
+.rodape__paragrafo {
+    color: var(--cor-fonte-secundaria);
+    font-size: 20px;
+}
+
+.rodape__cadastro {
+    padding: 40px 0;
+}
+
+.cadastrar {
+    padding: 12px 14px;
+    border-radius: 8px;
+    border: 1px solid #D0D5DD;
+    width: 20%;
+}
+
+.botao__cadastro {
+    background-color: var(--cor-fonte-destaque);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    margin-left: 16px;
+}
+
+.direitos__autorais {
+    color: var(--cor-fonte-secundaria);
+}
+
+@media screen and (max-width: 790px) {
+    .header__navbar__empresa {
+        display: none;
+    }
+
+    .cabecalho__paragrafo {
+        padding: 20px;
+    }
+
+    .cabecalho__estatisticas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2);
+        gap: 10px;
+    }
+
+    .principal__imagem {
+        width: 80%;
+    }
+
+    .vagas {
+        width: 70%;
+    }
+
+    .review__titulo {
+        font-size: 2em;
+    }
+
+    .rodape__cadastro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .cadastrar {
+        text-align: center;
+        width: 30%;
+    }
+
+    .botao__cadastro {
+        width: 30%;
+    }
+}
